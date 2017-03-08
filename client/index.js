@@ -23,7 +23,7 @@ import Tablesort from 'tablesort';
   );
 }());
 
-$('.search').keyup(() => {
+$('.search').keyup(function() {
   const el = this;
   // Show only matching TR, hide rest of them
   $.each($('.sortable tbody tr'), function handleSearch() {
