@@ -1,7 +1,7 @@
 export default () => ({ // eslint-disable-line
 
   // link file UUID
-  id: '',
+  id: '97fc24fa-0428-11e7-ace0-1ce02ef0def9',
 
   // canonical URL of the published page
   // https://ig.ft.com/sites/ft-1000 get filled in by the ./configure script

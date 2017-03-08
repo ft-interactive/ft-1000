@@ -98,3 +98,12 @@ export function spoorTrackingPixel(str) {
   <noscript data-o-component="o-tracking">${img}</noscript>`,
   );
 }
+
+//solution based on https://github.com/rdmurphy/nunjucks-comma-filter/blob/master/index.js
+
+var format = require('d3-format');
+var commaFormatter = format.format(',');
+
+export function commaify(str) {
+  return commaFormatter(str);
+};
