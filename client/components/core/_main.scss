@@ -139,7 +139,7 @@ table {
         &:active {
           background-color: darken(oColorsGetPaletteColor('pink-tint3'), 5%);
         }
-        &[aria-sort="descending"]{
+        &[aria-sort='descending']{
           background: url(https://image.webservices.ft.com/v1/images/raw/fticon:arrow-up?height=44&tint=9B164F,9B164F&source=ig_wrr) center center no-repeat oColorsGetPaletteColor('pink-tint3');
           background-repeat: no-repeat;
           background-position: 95% center;
@@ -147,7 +147,7 @@ table {
           background-size: 15px 15px;
           margin: 0 7px 8px 0;
         }
-        &[aria-sort="ascending"]{
+        &[aria-sort='ascending']{
           background: url(https://image.webservices.ft.com/v1/images/raw/fticon:arrow-down?height=44&tint=9B164F,9B164F&source=ig_wrr) center center no-repeat oColorsGetPaletteColor('pink-tint3');
           background-repeat: no-repeat;
           background-position: 95% center;

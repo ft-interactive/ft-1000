@@ -1,56 +1,29 @@
 <input type="text" class="search" placeholder="Type to search..." data-o-grid-colspan="12 S2 Scenter M4 L4 XL4"/>
- 
 <table class="sortable o-table o-table--compact">
 	<thead>
 		<tr>
-			<th class="sortable align-left" data-sort-default>First name</th>
-			<th class="sortable align-left">Last name</th>
-			<th class="sortable reversed align-center">Age</th>
-			<th class="sortable sort-up sorted align-right">Worth 2015 ($bn)</th>
-			<th class="sortable reversed align-right" >Worth 2014 ($bn)</th>
-			<th class="sortable reversed align-right">Worth difference ($bn)</th>
-			<th class="sortable align-left">Citizenship country</th>
-			<th class="sortable align-left">Origin of wealth</th>
-			<th class="sortable align-left">Self made</th>
-			<th class="sortable align-left">City of residence</th>
+			<th class="sortable align-left" data-sort-method='number' data-sort-default>rank</th>
+			<th class="sortable align-left">Company</th>
+			<th class="sortable align-left">Country</th>
+			<th class="sortable align-left">Industry</th>
+			<th class="sortable align-right">Revenue Growth 2012-5</th>
+			<th class="sortable align-right">Revenue Growth 2012-5 (Annualised)</th>
+			<th class="sortable align-left">Employees</th>
+			<th class="sortable align-left">Founded</th>
 		</tr>
 	</thead>
 	<tbody>
+{% for row in table %}
 		<tr>
-			<td style="text-align: left;"><span>Bill</span></td>
-			<td style="text-align: left;"><span>Gates</span></td>
-			<td style="text-align: center;"><span>60</span></td>
-			<td style="text-align: right;"><span>75.0</span></td>
-			<td style="text-align: right;"><span>79.2</span></td>
-			<td style="text-align: right;"><span>-4.2</span></td>
-			<td style="text-align: left;"><span>US</span></td>
-			<td style="text-align: left;"><span>Microsoft</span></td>
-			<td style="text-align: left;"><span>Self-made</span></td>
-			<td style="text-align: left;"><span>Medina</span></td>
+			<td style="text-align: right;" data-sort-method='number'><span>{{ row.rank }}</span></td>
+			<td style="text-align: left;"><span><a href="http://{{ row.url }}" target="_blank">{{ row.company }}</a></span></td>
+			<td style="text-align: left;"><span>{{ row.country }}</span></td>
+			<td style="text-align: left;"><span>{{ row.industry }}</span></td>
+			<td style="text-align: right;"><span>{{ row.growthabsolute }}</span></td>
+			<td style="text-align: right;"><span>{{ row.growthcompoundannual }}</span></td>
+			<td style="text-align: right;"><span>{{ row.employees2015 }}</span></td>
+			<td style="text-align: right;"><span>{{ row.foundedyear }}</span></td>
 		</tr>
-		<tr>
-			<td style="text-align: left;"><span>Amancio</span></td>
-			<td style="text-align: left;"><span>Ortega</span></td>
-			<td style="text-align: center;"><span>79</span></td>
-			<td style="text-align: right;"><span>67.0</span></td>
-			<td style="text-align: right;"><span>64.5</span></td>
-			<td style="text-align: right;"><span>2.5</span></td>
-			<td style="text-align: left;"><span>Spain</span></td>
-			<td style="text-align: left;"><span>Zara</span></td>
-			<td style="text-align: left;"><span>Self-made</span></td>
-			<td style="text-align: left;"><span>La Coruna</span></td>
-		</tr>
-		<tr>
-			<td style="text-align: left;"><span>Warren</span></td>
-			<td style="text-align: left;"><span>Buffett</span></td>
-			<td style="text-align: center;"><span>85</span></td>
-			<td style="text-align: right;"><span>60.8</span></td>
-			<td style="text-align: right;"><span>72.7</span></td>
-			<td style="text-align: right;"><span>-11.9</span></td>
-			<td style="text-align: left;"><span>US</span></td>
-			<td style="text-align: left;"><span>Berkshire Hathaway</span></td>
-			<td style="text-align: left;"><span>Self-made</span></td>
-			<td style="text-align: left;"><span>Omaha</span></td>
-		</tr>
+{% endfor %}
 	</tbody>
 </table>
