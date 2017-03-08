@@ -17,3 +17,21 @@
             - template.html
 
 */
+
+import $ from 'jquery';
+import tablesort from 'tablesort';
+
+$('.search').keyup(function () {
+  var _this = this;
+        // Show only matching TR, hide rest of them
+  $.each($('.sortable tbody tr'), function () {
+    if ($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+      $(this).hide();
+    else
+      $(this).show();
+  });
+});
+
+tablesort(document.querySelector('.sortable'), {
+  // descending: true,
+});

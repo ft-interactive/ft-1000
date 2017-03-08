@@ -11,20 +11,19 @@ export default () => ({ // eslint-disable-line
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'Politics and the English Language',
+  headline: 'The FT 1000: The complete list',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'Political language is designed to make lies sound truthful' +
-           'and murder respectable, and to give an appearance of solidity to pure wind',
+  summary: 'The complete list of Europe’s fastest-growing companies, compiled in association with Statista',
 
   topic: {
-    name: 'Starter Kit',
-    url: '/foo',
+    name: 'FT 1000: Europe’s Fastest Growing Companies',
+    url: 'https://www.ft.com/reports/europes-fastest-growing-companies',
   },
 
   relatedArticle: {
     text: 'Related article »',
-    url: 'https://en.wikipedia.org/wiki/Politics_and_the_English_Language',
+    url: 'https://www.ft.com/reports/europes-fastest-growing-companies',
   },
 
   mainImage: {
@@ -38,12 +37,13 @@ export default () => ({ // eslint-disable-line
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
   byline: [
-    { name: 'Author One', url: '/foo/bar' },
-    { name: 'Author Two' },
+    { name: 'Steve Bernard', url: 'https://www.ft.com/steve-bernard' },
+    { name: 'Martin Stabe', url: 'https://www.ft.com/martin-stabe' },
+    { name: 'Ændrew Rininsland', url: 'https://www.ft.com/%C3%A6ndrew-rininsland' },
   ],
 
   // Appears in the HTML <title>
-  title: '',
+  title: 'The FT1000 fastest-growing European companies',
 
   // meta data
   description: '',
