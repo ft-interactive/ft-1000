@@ -2,7 +2,7 @@
 <table class="sortable o-table o-table--compact">
 	<thead>
 		<tr>
-			<th class="sortable align-left" data-sort-method='number' data-sort-default>rank</th>
+			<th class="sortable align-left" data-sort-default data-sort-method="number">rank</th>
 			<th class="sortable align-left">Company</th>
 			<th class="sortable align-left">Country</th>
 			<th class="sortable align-left">Industry</th>
@@ -15,7 +15,7 @@
 	<tbody>
 {% for row in table %}
 		<tr>
-			<td style="text-align: right;" data-sort-method='number'><span>{{ row.rank }}</span></td>
+			<td style="text-align: right;"><span>{{ row.rank }}</span></td>
 			<td style="text-align: left;"><span><a href="http://{{ row.url }}" target="_blank">{{ row.company }}</a></span></td>
 			<td style="text-align: left;"><span>{{ row.country }}</span></td>
 			<td style="text-align: left;"><span>{{ row.industry }}</span></td>
