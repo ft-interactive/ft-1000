@@ -6,7 +6,7 @@
 			<th class="sortable align-left">Company</th>
 			<th class="sortable align-left">Country</th>
 			<th class="sortable align-left">Industry</th>
-			<th class="sortable align-right">Pretax profit 2015</th>
+			<th class="sortable align-right">Pretax profit 2015 (&euro;)</th>
 			<th class="sortable align-right">Revenue Growth 2012-5</th>
 			<th class="sortable align-right">Annual Revenue Growth 2012-5</th>
 			<th class="sortable align-left">Employees</th>
@@ -20,7 +20,7 @@
 			<td style="text-align: left;"><a href="{# row.url #}" target="_blank">{{ row.company }}</a></td>
 			<td style="text-align: left;">{{ row.country }}</td>
 			<td style="text-align: left">{{ row.industry }}</td>
-			<td style="text-align: right;">{% if row.profit2015 %}&euro;{{ (row.profit2015 * 1000) | round | commaify }}{% endif %}</td>
+			<td style="text-align: right;">{% if row.profit2015 %}{{ (row.profit2015 * 1000) | round | commaify }}{% endif %}</td>
 			<td style="text-align: right;">{{ (row.growthabsolute * 100) | round | commaify }}%</td>
 			<td style="text-align: right;">{{ (row.growthcompoundannual  * 100) | round | commaify }}%</td>
 			<td style="text-align: right;">{{ row.employees2015 | round | commaify }}</td>
