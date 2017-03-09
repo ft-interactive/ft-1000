@@ -27,26 +27,26 @@ export default () => ({ // eslint-disable-line
   },
 
   mainImage: {
-    title: '',
-    description: '',
-    url: '',
-    width: 2048, // ensure correct width
-    height: 1152, // ensure correct height
+    title: 'FT 1000',
+    description: 'FT 1000 logo',
+    url: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A0509fe24-9ac9-11e6-8f9b-70e3cabccfae?source=ig&width=1745',
+    width: 1745, // ensure correct width
+    height: 916, // ensure correct height
   },
 
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
   byline: [
-    { name: 'Steve Bernard', url: 'https://www.ft.com/steve-bernard' },
     { name: 'Martin Stabe', url: 'https://www.ft.com/martin-stabe' },
     { name: 'Ændrew Rininsland', url: 'https://www.ft.com/%C3%A6ndrew-rininsland' },
+    { name: 'Steve Bernard', url: 'https://www.ft.com/steve-bernard' },
   ],
 
   // Appears in the HTML <title>
   title: 'The FT1000 fastest-growing European companies',
 
   // meta data
-  description: '',
+  description: 'Europe’s fastest-growing companies',
 
   /*
   TODO: Select Twitter card type -
@@ -62,19 +62,19 @@ export default () => ({ // eslint-disable-line
         optional social meta data?
   */
   // General social
-  // socialImage: '',
+socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A0509fe24-9ac9-11e6-8f9b-70e3cabccfae?source=ig&width=1745',
   // socialHeadline: '',
   // socialSummary:  '',
 
   // TWITTER
-  // twitterImage: '',
-  // twitterCreator: '@individual's_account',
-  // tweetText:  '',
-  // twitterHeadline:  '',
+  twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A0509fe24-9ac9-11e6-8f9b-70e3cabccfae?source=ig&width=1745',
+  twitterCreator: '@ftreports',
+  tweetText:  'The complete lest of Europe’s 1000 fastest-growing companies',
+  twitterHeadline:  'The FT 1000',
 
   // FACEBOOK
-  // facebookImage: '',
-  // facebookHeadline: '',
+facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A0509fe24-9ac9-11e6-8f9b-70e3cabccfae?source=ig&width=1745',
+facebookHeadline: 'The FT 1000: Europe’s fastest-growing companies',
 
   tracking: {
 
