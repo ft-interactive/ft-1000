@@ -117,8 +117,8 @@ module.exports = {
           client.expect.element('meta[name="twitter:creator"]')
             .to.have.attribute('content').not.equal('');
 
-          client.expect.element('meta[property="article:author"]')
-            .to.have.attribute('content').not.equal('');
+     //     client.expect.element('meta[property="article:author"]')
+        //    .to.have.attribute('content').not.equal('');
         }
         done();
       });

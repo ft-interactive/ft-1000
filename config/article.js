@@ -11,7 +11,7 @@ export default () => ({ // eslint-disable-line
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date(),
 
-  headline: 'The FT 1000: The complete list',
+  headline: 'The FT 1000: The complete list of Europe’s fastest-growing companies',
 
   // summary === standfirst (Summary is what the content API calls it)
   summary: 'The complete list of Europe’s fastest-growing companies, compiled in association with Statista',
