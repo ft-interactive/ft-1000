@@ -18,12 +18,12 @@ import Tablesort from 'tablesort';
 
   Tablesort.extend(
     'number',
-    item => prefixed.test(item) || suffixedCurrency.test(item) || numberRegex.match(item),
+    item => prefixed.test(item) || suffixedCurrency.test(item) || numberRegex.test(item),
     (a, b) => compareNumber(cleanNumber(b), cleanNumber(a)),
   );
 }());
 
-$('.search').keyup(() => {
+$('.search').keyup(function searchKeyup() {
   const el = this;
   // Show only matching TR, hide rest of them
   $.each($('.sortable tbody tr'), function handleSearch() {
