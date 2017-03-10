@@ -1,5 +1,5 @@
 <input type="text" class="search" placeholder="Type to filter the FT 1000..." data-o-grid-colspan="12 S2 Scenter M4 L4 XL4"/>
-<table class="sortable o-table o-table--compact">
+<table class="sortable o-table o-table--compact" style="width:100%;">
 	<thead>
 		<tr>
 			<th class="sortable align-left" data-sort-default data-sort-method="number"></th>
@@ -18,7 +18,7 @@
 {% for row in table %}
 		<tr>
 			<td style="text-align: right;">{{ row.rank | commaify }}</td>
-			<td style="text-align: left;" nowrap><a href="http://{# row.url #}" target="_blank">{{ row.company }}</a></td>
+			<td style="text-align: left;" nowrap>{% if row.url %}<a href="http://{# row.url #}" target="_blank">{{ row.company }}</a>{% else %}{{ row.company }}{% endif %}</td>
 			<td style="text-align: left;" nowrap><a href="https://www.ft.com/topics/places/{{ row.country }}">{{ row.country }}</a></td>
 			<td style="text-align: left" nowrap>{{ row.industry }}</td>
 			<td style="text-align: left" nowrap><a href="{{ row.ftindustrylink }}">{{ row.ftindustry }}</td>
