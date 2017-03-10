@@ -6,6 +6,7 @@
 			<th class="sortable align-left">Company</th>
 			<th class="sortable align-left">Country</th>
 			<th class="sortable align-left">Industry</th>
+			<th class="sortable align-left">FT Category</th>
 			<th class="sortable align-right">Pretax profit 2015 (&euro;)</th>
 			<th class="sortable align-right">Revenue Growth 2012-5</th>
 			<th class="sortable align-right">Annual Revenue Growth 2012-5</th>
@@ -17,9 +18,10 @@
 {% for row in table %}
 		<tr>
 			<td style="text-align: right;">{{ row.rank | commaify }}</td>
-			<td style="text-align: left;"><a href="{# row.url #}" target="_blank">{{ row.company }}</a></td>
-			<td style="text-align: left;">{{ row.country }}</td>
-			<td style="text-align: left">{{ row.industry }}</td>
+			<td style="text-align: left;" nowrap><a href="http://{# row.url #}" target="_blank">{{ row.company }}</a></td>
+			<td style="text-align: left;" nowrap><a href="https://www.ft.com/topics/places/{{ row.country }}">{{ row.country }}</a></td>
+			<td style="text-align: left" nowrap>{{ row.industry }}</td>
+			<td style="text-align: left" nowrap><a href="{{ row.ftindustrylink }}">{{ row.ftindustry }}</td>
 			<td style="text-align: right;">{% if row.profit2015 %}{{ (row.profit2015 * 1000) | round | commaify }}{% endif %}</td>
 			<td style="text-align: right;">{{ (row.growthabsolute * 100) | round | commaify }}%</td>
 			<td style="text-align: right;">{{ (row.growthcompoundannual  * 100) | round | commaify }}%</td>
