@@ -126,11 +126,20 @@ table {
         -ms-user-select: none;
         cursor: pointer;
         transition: background-color 0.3s; 
-        &:nth-child(n+3) {
-          text-align: center;
+        &:nth-child(n+4) {
+          text-align: left;
+        }
+        &:nth-child(n+5) {
+          text-align: right;
+        }
+        &:nth-child(n+6) {
+          text-align: right;
         }
         &:nth-child(n+7) {
-          text-align: left;
+          text-align: right;
+        }
+        &:nth-child(n+8) {
+          text-align: right;
         }
         &:hover {
           background-color: oColorsGetPaletteColor('pink-tint3');
