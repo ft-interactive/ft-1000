@@ -1,0 +1,35 @@
+<input type="text" class="search" placeholder="Type to filter the FT 1000..." data-o-grid-colspan="12 S2 Scenter M4 L4 XL4"/>
+<table class="sortable o-table--compact" style="width:100%;">
+<!--<table id="ft1000" class="o-table o-table--responsive-flat" data-o-component="o-table" data-o-table-responsive="flat">-->
+	<thead>
+		<tr>
+		<tr>
+			<th class="sortable align-left" data-sort-default data-sort-method="number"></th>
+			<th class="sortable align-left">Company</th>
+			<th class="sortable align-left">Country</th>
+			<!--<th class="sortable align-left">Industry</th>-->
+			<th class="sortable align-left">Sector</th>
+			<th class="sortable align-right">Pretax profit 2015 <span class="o-table__cell--content-secondary">(&euro;)</span></th>
+			<th class="sortable align-right">Revenue Growth <span class="o-table__cell--content-secondary">2012-5</span></th>
+			<th class="sortable align-right">Annual Revenue Growth <span class="o-table__cell--content-secondary">2012-5</span></th>
+			<th class="sortable align-left">Employees</th>
+			<th class="sortable align-left">Founded</th>
+		</tr>
+	</thead>
+	<tbody>
+{% for row in table %}
+		<tr>
+			<td style="text-align: right;">{{ row.rank | commaify }}</td>
+			<td style="text-align: left;" nowrap>{% if row.url %}<a href="http://{{ row.url }}" target="_blank">{{ row.company }}</a>{% else %}{{ row.company }}{% endif %}</td>
+			<td style="text-align: left;" nowrap><a href="https://www.ft.com/topics/places/{{ row.country }}">{{ row.country }}</a></td>
+			<!--<td style="text-align: left" nowrap>{{ row.industry }}</td>-->
+			<td style="text-align: left" nowrap><a href="{{ row.ftindustrylink }}">{{ row.ftindustry }}</td>
+			<td style="text-align: right;">{% if row.profit2015 %}{{ (row.profit2015 * 1000) | round | commaify }}{% endif %}</td>
+			<td style="text-align: right;">{{ (row.growthabsolute) | round | commaify }}%</td>
+			<td style="text-align: right;">{{ (row.growthcompoundannual) | round | commaify }}%</td>
+			<td style="text-align: right;">{{ row.employees2015 | round | commaify }}</td>
+			<td style="text-align: right;">{{ row.foundedyear }}</td>
+		</tr>
+{% endfor %}
+	</tbody>
+</table>
