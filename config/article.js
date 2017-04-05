@@ -5,7 +5,7 @@ export default () => ({ // eslint-disable-line
 
   // canonical URL of the published page
   // https://ig.ft.com/sites/ft-1000 get filled in by the ./configure script
-  url: 'https://ig.ft.com/sites/ft-1000',
+  url: 'https://ig.ft.com/ft-1000',
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
@@ -14,7 +14,7 @@ export default () => ({ // eslint-disable-line
   headline: 'The FT 1000: The complete list of Europe’s fastest-growing companies',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'The complete list of Europe’s fastest-growing companies, compiled in association with Statista',
+  summary: 'The complete list of Europe’s fastest-growing companies, compiled in association with',
 
   topic: {
     name: 'FT 1000: Europe’s Fastest Growing Companies',
@@ -22,14 +22,14 @@ export default () => ({ // eslint-disable-line
   },
 
   relatedArticle: {
-    text: 'Related article »',
-    url: 'https://www.ft.com/reports/europes-fastest-growing-companies',
+    text: 'Statista',
+    url: 'https://www.statista.com/aboutus/',
   },
 
   mainImage: {
     title: 'FT 1000',
     description: 'FT 1000 logo',
-    url: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A0509fe24-9ac9-11e6-8f9b-70e3cabccfae?source=ig&width=1745',
+    url: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A97880f76-9aaf-11e6-b8c6-568a43813464?source=ig&width=1745',
     width: 1745, // ensure correct width
     height: 916, // ensure correct height
   },
@@ -55,25 +55,25 @@ export default () => ({ // eslint-disable-line
         Twitter card docs:
         https://dev.twitter.com/cards/markup
   */
-  twitterCard: 'summary',
+  twitterCard: 'summary_large_image',
 
   /*
   TODO: Do you want to tweak any of the
         optional social meta data?
   */
   // General social
-socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A0509fe24-9ac9-11e6-8f9b-70e3cabccfae?source=ig&width=1745',
+socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A97880f76-9aaf-11e6-b8c6-568a43813464?source=ig&width=1745',
   // socialHeadline: '',
   // socialSummary:  '',
 
   // TWITTER
-  twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A0509fe24-9ac9-11e6-8f9b-70e3cabccfae?source=ig&width=1745',
+  twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A97880f76-9aaf-11e6-b8c6-568a43813464?source=ig&width=1745',
   twitterCreator: '@ftreports',
   tweetText:  'The complete lest of Europe’s 1000 fastest-growing companies',
   twitterHeadline:  'The FT 1000',
 
   // FACEBOOK
-facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A0509fe24-9ac9-11e6-8f9b-70e3cabccfae?source=ig&width=1745',
+facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A97880f76-9aaf-11e6-b8c6-568a43813464?source=ig&width=1745',
 facebookHeadline: 'The FT 1000: Europe’s fastest-growing companies',
 
   tracking: {
