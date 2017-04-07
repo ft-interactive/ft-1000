@@ -29,7 +29,7 @@ export default () => ({ // eslint-disable-line
   mainImage: {
     title: 'FT 1000',
     description: 'FT 1000 logo',
-    url: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Aa3892fa8-1ae8-11e7-a266-12672483791a?source=ig&width=1745',
+    url: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
     width: 1745, // ensure correct width
     height: 916, // ensure correct height
   },
@@ -62,18 +62,18 @@ export default () => ({ // eslint-disable-line
         optional social meta data?
   */
   // General social
-socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Aa3892fa8-1ae8-11e7-a266-12672483791a?source=ig&width=1745',
+socialImage: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
   // socialHeadline: '',
   // socialSummary:  '',
 
   // TWITTER
-  twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Aa3892fa8-1ae8-11e7-a266-12672483791a?source=ig&width=1745',
+  twitterImage: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
   twitterCreator: '@ftreports',
   tweetText:  'The complete lest of Europe’s 1000 fastest-growing companies',
   twitterHeadline:  'The FT 1000',
 
   // FACEBOOK
-facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Aa3892fa8-1ae8-11e7-a266-12672483791a?source=ig&width=1745',
+facebookImage: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
 facebookHeadline: 'The FT 1000: Europe’s fastest-growing companies',
 
   tracking: {
