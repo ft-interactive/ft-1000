@@ -14,7 +14,7 @@ export default () => ({ // eslint-disable-line
   headline: 'The FT 1000: The complete list of Europe’s fastest-growing companies',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'The complete list of Europe’s fastest-growing companies, compiled in association with',
+  summary: 'London is EU hub for innovation and commerce, according to list compiled with',
 
   topic: {
     name: 'FT 1000: Europe’s Fastest Growing Companies',
