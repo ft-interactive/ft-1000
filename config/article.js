@@ -76,6 +76,10 @@ socialImage: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
 facebookImage: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
 facebookHeadline: 'The FT 1000: Europe’s fastest-growing companies',
 
+
+//ADVERTISING
+unitName: '5887/ft.com/brexit.polling',
+
   tracking: {
 
     /*
