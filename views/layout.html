@@ -7,12 +7,15 @@
     {% block prependhead %}{% endblock -%}
     {% include "includes/html-head.html" %}
     {% block appendhead %}{% endblock -%}
+    {% include "includes/ads-head.html" %}
   </head>
   <body>
 
     {% if flags.analytics %}
       {% include "includes/analytics.html" %}
     {% endif %}
+
+    {% include "includes/ads-body-leaderboard.html" %}
 
     {% if flags.header %}
       {% include "includes/header.html" %}
