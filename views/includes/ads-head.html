@@ -1,7 +1,11 @@
-<script data-o-ads-config="" type="application/json">
-  {
-    "gpt": {
-      "unitName" : "5887/ft.com/companies/european"
-    }
-  }
+{% if ads != undefined  %}
+	<script data-o-ads-config="" type="application/json">
+{
+ "gpt": {
+   "network": 5887,
+   "adunit": "{{ ads.gptAdunit }}"
+ },
+ "dfp_targeting" : "{{ ads.dftTargeting }} "
+}
 </script>
+{% endif %}
