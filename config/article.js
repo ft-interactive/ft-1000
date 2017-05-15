@@ -76,9 +76,13 @@ socialImage: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
 facebookImage: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
 facebookHeadline: 'The FT 1000: Europe’s fastest-growing companies',
 
-
 //ADVERTISING
-unitName: '5887/ft.com/companies/european',
+ads: {
+  // ad unit hierarchy makes ads more granular. Start with ft.com and /companies /markets /world
+  gptAdunit: 'ft.com/companies/european',
+  // granular targeting is optional
+  dftTargeting: "sr=FT 1000: Europe's Fastest Growing Companies",
+},
 
   tracking: {
 
