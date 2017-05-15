@@ -103,6 +103,7 @@ function getBundlers(useWatchify) {
 
       execute() {
         const stream = this.b.bundle()
+          .pipe(plumber())
           .on('error', function browserifyError(error) {
             handleBuildError.call(this, 'Error building JavaScript', error);
           })
