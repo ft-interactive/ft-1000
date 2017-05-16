@@ -81,7 +81,7 @@ ads: {
   // ad unit hierarchy makes ads more granular. Start with ft.com and /companies /markets /world
   gptAdunit: 'ft.com/companies/european',
   // granular targeting is optional
-  dftTargeting: "sr=FT 1000: Europe's Fastest Growing Companies",
+  dftTargeting: "sr=FT 1000: Europe",
 },
 
   tracking: {
