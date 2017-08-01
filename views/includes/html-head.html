@@ -102,3 +102,16 @@
   <meta property="ft.track:microsite_name" content="{{ tracking.micrositeName }}"/>
   {% endif %}
 {% endif -%}
+
+{% if flags.ads  %}
+<script data-o-ads-config="" type="application/json">
+{
+  "gpt": {
+    "network": 5887,
+    "site": "{{ ads.gptSite }}"
+    {%- if ads.gptZone %}, "zone": "{{ ads.gptZone }}"{% endif %}
+  }
+  {%- if ads.dfpTargeting %}, "dfp_targeting": "{{ ads.dfpTargeting }}"{%- endif %}
+}
+</script>
+{% endif %}
