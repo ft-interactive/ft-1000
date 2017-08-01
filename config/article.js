@@ -9,7 +9,7 @@ export default () => ({ // eslint-disable-line
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
-  publishedDate: new Date(),
+  publishedDate: new Date('2017-05-17T18:11:32.765Z'),
 
   headline: 'The FT 1000: The complete list of Europe’s fastest-growing companies',
 
@@ -77,11 +77,13 @@ facebookImage: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
 facebookHeadline: 'The FT 1000: Europe’s fastest-growing companies',
 
 //ADVERTISING
-ads: {
-  // ad unit hierarchy makes ads more granular. Start with ft.com and /companies /markets /world
-  gptAdunit: 'ft.com/companies/european',
-  // granular targeting is optional
-  dftTargeting: "sr=FT 1000: Europe",
+ ads: {
+    // Ad unit hierarchy makes ads more granular.
+    gptSite: 'ft.com',
+    // Start with ft.com and /companies /markets /world as appropriate to your story
+    gptZone: 'companies/european',
+    // granular targeting is optional and will be specified by the ads team
+    dfpTargeting: "sr=FT 1000: Europe's Fastest Growing Companies",
 },
 
   tracking: {
