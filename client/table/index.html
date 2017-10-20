@@ -39,7 +39,7 @@
       <td style="text-align: right;">{% if row.growthabsolute %}{{ (row.growthabsolute) | round | commaify }}%{% endif %}</td>
       <td style="text-align: right;">{% if row.growthcompoundannual %}{{ (row.growthcompoundannual) | commaify }}%{% endif %}</td>
       <td style="text-align: right;">{% if row.revenue2016 %}{{ row.revenue2016 | round | commaify }}{% endif %}</td>
-      <td style="text-align: right;">{% if row.employeegrowth != 'n/a' %}{{ row.employeegrowth | round | commaify | dashify }}%{% else %}n/a{% endif %}</td>
+      <td style="text-align: right;">{% if row.employeegrowth != 'n/a' %}{{ row.employeegrowth | round | commaify | dashify }}{% else %}n/a{% endif %}</td>
       <td style="text-align: right;">{% if row.employees2016 %}{{ row.employees2016 | round | commaify | dashify }}{% endif %}</td>
       <td style="text-align: right;">{% if row.foundedyear %}{{ row.foundedyear }}{% endif %}</td>
     </tr>
