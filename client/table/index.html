@@ -8,10 +8,10 @@
 			<th class="sortable">Company</th>
 			<th class="sortable align-left">Country</th>
 			<th class="sortable align-left">Sector</th>
-			<th class="sortable">Revenue<br />Growth <span class="o-table__cell--content-secondary">2012-5</span></th>
-			<th class="sortable">CAGR<br/><span class="o-table__cell--content-secondary">2012-5</span></th>
-			<th class="sortable">Revenue<br/><span class="o-table__cell--content-secondary">2015 (&rsquo;000 &euro;)</span></th>		
-			<th class="sortable">Employees<br/><span class="o-table__cell--content-secondary">2015</span></th>
+			<th class="sortable">Revenue<br />Growth <span class="o-table__cell--content-secondary">2013-16</span></th>
+			<th class="sortable">CAGR<br/><span class="o-table__cell--content-secondary">2013-16</span></th>
+			<th class="sortable">Revenue<br/><span class="o-table__cell--content-secondary">2016 (&rsquo;000 &dollar;)</span></th>
+			<th class="sortable">Employees<br/><span class="o-table__cell--content-secondary">2016</span></th>
 			<th class="sortable">Founded</th>
 		</tr>
 	</thead>
@@ -24,8 +24,8 @@
 			<td style="text-align: left"><a href="{{ row.ftindustrylink }}">{{ row.ftindustry }}</td>
 			<td style="text-align: right;">{% if row.growthabsolute %}{{ (row.growthabsolute) | round | commaify }}%{% endif %}</td>
 			<td style="text-align: right;">{% if row.growthcompoundannual %}{{ (row.growthcompoundannual) | commaify }}%{% endif %}</td>
-			<td style="text-align: right;">{% if row.revenueeuro2015 %}{{ row.revenueeuro2015 | round | commaify }}{% endif %}</td>
-			<td style="text-align: right;">{% if row.employees2015 %}{{ row.employees2015 | round | commaify }}{% endif %}</td>
+			<td style="text-align: right;">{% if row.revenue2016 %}{{ row.revenue2016 | round | commaify }}{% endif %}</td>
+			<td style="text-align: right;">{% if row.employees2016 %}{{ row.employees2016 | round | commaify | dashify }}{% endif %}</td>
 			<td style="text-align: right;">{% if row.foundedyear %}{{ row.foundedyear }}{% endif %}</td>
 		</tr>
 {% endfor %}

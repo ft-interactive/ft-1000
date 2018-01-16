@@ -10,7 +10,7 @@ export default async () => {
   const onwardJourney = await getOnwardJourney();
 
   try {
-    const table = (await axios('https://bertha.ig.ft.com/view/publish/gss/1sLtLlvhaCDBgGSNskJPdKdkWJFwFNq0Er6GMGaEbt9c/data')).data;
+    const table = (await axios('http://bertha.ig.ft.com/view/publish/gss/1iOqn4jmAk7fJctbXxXKuu1gjO8r24IDtvQCK2t5hywQ/FT1000%20Asia-Pacific')).data;
     return {
       ...d,
       flags,
