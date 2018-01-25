@@ -1,28 +1,28 @@
 export default () => ({ // eslint-disable-line
 
   // link file UUID
-  id: '97fc24fa-0428-11e7-ace0-1ce02ef0def9',
+  id: '02cdcb40-01d9-11e8-9650-9c0ad2d7c5b5',
 
   // canonical URL of the published page
   // https://ig.ft.com/sites/ft-1000 get filled in by the ./configure script
-  url: 'https://ig.ft.com/ft-1000',
+  url: 'https://ig.ft.com/special-reports/ft-1000/asia-pacific/2018',
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
-  publishedDate: new Date('2017-05-17T18:11:32.765Z'),
+  publishedDate: new Date('2018-02-12T05:00:00Z'),
 
-  headline: 'The FT 1000: The complete list of Europe’s fastest-growing companies',
+  headline: 'FT 1000: High-Growth Companies Asia-Pacific',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'London is EU hub for innovation and commerce, according to list compiled with',
+  summary: 'Standfirst TK',
 
   topic: {
-    name: 'FT 1000: Europe’s Fastest Growing Companies',
-    url: 'https://www.ft.com/reports/europes-fastest-growing-companies',
+    name: 'FT 1000: High-Growth Companies Asia-Pacific',
+    url: '#',
   },
 
   relatedArticle: {
-    text: 'Statista',
+    text: 'Link to Statista?',
     url: 'https://www.statista.com/aboutus/',
   },
 
@@ -40,13 +40,14 @@ export default () => ({ // eslint-disable-line
     { name: 'Martin Stabe', url: 'https://www.ft.com/martin-stabe' },
     { name: 'Ændrew Rininsland', url: 'https://www.ft.com/%C3%A6ndrew-rininsland' },
     { name: 'Steve Bernard', url: 'https://www.ft.com/steve-bernard' },
+    { name: 'David Blood', url: 'https://www.ft.com/david-blood' },
   ],
 
   // Appears in the HTML <title>
-  title: 'The FT1000 fastest-growing European companies',
+  title: 'FT 1000: High-Growth Companies Asia-Pacific',
 
   // meta data
-  description: 'Europe’s fastest-growing companies',
+  description: 'FT 1000: High-Growth Companies Asia-Pacific',
 
   /*
   TODO: Select Twitter card type -
@@ -69,12 +70,12 @@ socialImage: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
   // TWITTER
   twitterImage: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
   twitterCreator: '@ftreports',
-  tweetText:  'The complete lest of Europe’s 1000 fastest-growing companies',
-  twitterHeadline:  'The FT 1000',
+  tweetText:  'FT 1000: High-Growth Companies Asia-Pacific',
+  twitterHeadline:  'FT 1000: High-Growth Companies Asia-Pacific',
 
   // FACEBOOK
 facebookImage: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
-facebookHeadline: 'The FT 1000: Europe’s fastest-growing companies',
+facebookHeadline: 'FT 1000: High-Growth Companies Asia-Pacific',
 
 //ADVERTISING
  ads: {
