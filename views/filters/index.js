@@ -109,7 +109,7 @@ export function commaify(str) {
 };
 
 export function dashify(str) {
-  const dashified = str === 'NaN' ? '-' : str;
+  const dashified = str === 'NaN' ? 'n/a' : str;
 
   return dashified;
 }
