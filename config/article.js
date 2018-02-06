@@ -14,7 +14,7 @@ export default () => ({ // eslint-disable-line
   headline: 'FT 1000: High-Growth Companies Asia-Pacific',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'Standfirst TK',
+  summary: 'The region’s technology companies lead the way',
 
   topic: {
     name: 'FT 1000: High-Growth Companies Asia-Pacific',
