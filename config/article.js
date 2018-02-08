@@ -14,15 +14,15 @@ export default () => ({ // eslint-disable-line
   headline: 'FT 1000: High-Growth Companies Asia-Pacific',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'The region’s technology companies lead the way',
+  summary: 'The region’s technology companies lead the way, according to list compiled with',
 
   topic: {
     name: 'FT 1000: High-Growth Companies Asia-Pacific',
-    url: '#',
+    url: 'https://www.ft.com/reports/ft1000-asia-pacific',
   },
 
   relatedArticle: {
-    text: 'Link to Statista?',
+    text: 'Statista',
     url: 'https://www.statista.com/aboutus/',
   },
 
