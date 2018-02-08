@@ -28,17 +28,17 @@
 
               {% block article_head %}
 
+              {% include "includes/article-head.html" %}
+
               {% if flags.shareButtons %}
                 {% include "includes/share.html" %}
               {% endif %}
-
-              {% include "includes/article-head.html" %}
               {% endblock %}
 
             </header>
           </div>
         </div>
-        <div class="article-body o-typography-body-wrapper" itemprop="articleBody">
+        <div class="article-body o-typography-wrapper" itemprop="articleBody">
 
           {% block article_body %}{% endblock %}
 

@@ -1,10 +1,10 @@
-<link rel="stylesheet" href="https://origami-build.ft.com/v2/bundles/css?modules=o-share@^2">
-<div data-o-component="o-share"
-    class="o-share o-share--vertical o-share--muted"
-    data-o-share-links="twitter facebook"
+<div class="article__share article__share--top n-util-clearfix" data-trackable="share | top">
+  <div data-o-component="o-share"
+    class="o-share o-share--horizontal o-share--muted"
+    data-o-share-links="twitter facebook linkedin whatsapp"
     data-o-share-url="{{ url }}"
     data-o-share-title="{{ socialHeadline | default(headline, true) | plain }}"
     data-o-share-summary="{{ socialSummary | default(summary, true) | plain }}"
     data-o-share-relatedTwitterAccounts="@ft">
 </div>
-<script async>queue('https://origami-build.ft.com/v2/bundles/js?export=oShare&modules=o-share@^2', null, true)</script>
+<script async>queue('https://origami-build.ft.com/v2/bundles/js?export=oShare&modules=o-share@^6.1.0', null, true)</script>
