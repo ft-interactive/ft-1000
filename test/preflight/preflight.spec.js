@@ -174,18 +174,18 @@ module.exports = {
   },
 
   'Topic link should be populated': (client) => {
-    client.expect.element('.o-typography-link-topic').to.be.present;
-    client.expect.element('.o-typography-link-topic')
+    client.expect.element('.o-typography-topic').to.be.present;
+    client.expect.element('.o-typography-topic')
       .to.have.attribute('href').not.equal('');
 
-    client.expect.element('.o-typography-link-topic')
+    client.expect.element('.o-typography-topic')
       .text.to.not.equal('');
   },
 
   'Headline should be populated': (client) => {
-    client.expect.element('h1.o-typography-heading1')
+    client.expect.element('h1.o-typography-headline')
       .to.be.present;
-    client.expect.element('h1.o-typography-heading1')
+    client.expect.element('h1.o-typography-headline')
       .text.to.not.equal('');
   },
 
