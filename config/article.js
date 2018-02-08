@@ -27,11 +27,11 @@ export default () => ({ // eslint-disable-line
   },
 
   mainImage: {
-    title: 'FT 1000',
-    description: 'FT 1000 logo',
-    url: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
-    width: 1745, // ensure correct width
-    height: 916, // ensure correct height
+    title: 'FT 1000: High-Growth Companies Asia-Pacific',
+    description: 'FT 1000: High-Growth Companies Asia-Pacific',
+    url: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=2084&height=1152&quality=high',
+    width: 2048, // ensure correct width
+    height: 1152, // ensure correct height
   },
 
   // Byline can by a plain string, markdown, or array of authors
@@ -63,18 +63,18 @@ export default () => ({ // eslint-disable-line
         optional social meta data?
   */
   // General social
-socialImage: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
+socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
   // socialHeadline: '',
   // socialSummary:  '',
 
   // TWITTER
-  twitterImage: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
+  twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
   twitterCreator: '@ftreports',
   tweetText:  'FT 1000: High-Growth Companies Asia-Pacific',
   twitterHeadline:  'FT 1000: High-Growth Companies Asia-Pacific',
 
   // FACEBOOK
-facebookImage: 'https://ig.ft.com/ft-1000/images/FT1000_logo.png',
+facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
 facebookHeadline: 'FT 1000: High-Growth Companies Asia-Pacific',
 
 //ADVERTISING
