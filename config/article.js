@@ -64,7 +64,7 @@ export default () => ({ // eslint-disable-line
   // General social
   socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
   // socialHeadline: '',
-  // socialSummary: 'The region’s technology companies lead the way, according to list compiled with Statista',
+  socialSummary: 'The FT 1000: High-growth companies in the Asia-Pacific region',
 
   // TWITTER
   twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
