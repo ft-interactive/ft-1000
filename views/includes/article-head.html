@@ -12,29 +12,34 @@
 </p>
 <meta itemprop="dateModified" content="{{ publishedDate | isotime }}">
 
-<p>
-  <span class="o-typography-timestamp">
-    {%- if publishedDate -%}
-    <time class="article__timestamp o-date o-typography-timestamp"
-            data-o-component="o-date" datetime="{{ publishedDate | isotime }}"
-            itemprop="datePublished" content="{{ publishedDate | isotime }}"
-            data-o-date-js>{{ publishedDate | ftdate }}</time>
+
+<div>
+  <p>
+    {%- if byline -%}
+    <span>
+    {%- if byline.push -%}
+      {%- for author in byline -%}
+        {{ " and " if not loop.first and loop.last else (", " if not loop.first else "") }}
+        {%- if author.url -%}
+          <a href="{{ author.url }}" class="o-typography-author" itemprop="author">{{ author.name }}</a>
+        {%- else -%}
+          {{ author.name }}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- else -%}
+      {{ byline | md(true) }}
     {%- endif -%}
-  </span>
-  {%- if byline -%}
-  &#32;<span>by&nbsp;
-  {%- if byline.push -%}
-    {%- for author in byline -%}
-      {{ " and " if not loop.first and loop.last else (", " if not loop.first else "") }}
-      {%- if author.url -%}
-        <a href="{{ author.url }}" class="o-typography-author" itemprop="author">{{ author.name }}</a>
-      {%- else -%}
-        {{ author.name }}
+    </span>
+    in London&nbsp;
+    {%- endif -%}
+
+    <span class="o-typography-timestamp">
+      {%- if publishedDate -%}
+      <time class="article__timestamp o-date o-typography-timestamp"
+              data-o-component="o-date" datetime="{{ publishedDate | isotime }}"
+              itemprop="datePublished" content="{{ publishedDate | isotime }}"
+              data-o-date-js>{{ publishedDate | ftdate }}</time>
       {%- endif -%}
-    {%- endfor -%}
-  {%- else -%}
-    {{ byline | md(true) }}
-  {%- endif -%}
-  </span>
-  {%- endif -%}
-</p>
+    </span>
+  </p>
+</div>

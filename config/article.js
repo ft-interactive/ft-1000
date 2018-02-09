@@ -37,10 +37,9 @@ export default () => ({ // eslint-disable-line
   // Byline can by a plain string, markdown, or array of authors
   // if array of authors, url is optional
   byline: [
-    { name: 'Martin Stabe', url: 'https://www.ft.com/martin-stabe' },
-    { name: 'Ændrew Rininsland', url: 'https://www.ft.com/%C3%A6ndrew-rininsland' },
-    { name: 'Steve Bernard', url: 'https://www.ft.com/steve-bernard' },
     { name: 'David Blood', url: 'https://www.ft.com/david-blood' },
+    { name: 'Ændrew Rininsland', url: 'https://www.ft.com/%C3%A6ndrew-rininsland' },
+    { name: 'Ian Smith', url: '' },
   ],
 
   // Appears in the HTML <title>
