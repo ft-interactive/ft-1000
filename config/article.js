@@ -46,7 +46,7 @@ export default () => ({ // eslint-disable-line
   title: 'FT 1000: High-Growth Companies Asia-Pacific',
 
   // meta data
-  description: 'The region’s technology companies lead the way, according to list compiled with Statista',
+  description: 'The FT 1000: High-growth companies in the Asia-Pacific region',
 
   /*
   TODO: Select Twitter card type -
@@ -69,7 +69,7 @@ export default () => ({ // eslint-disable-line
   // TWITTER
   twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
   twitterCreator: '@ftreports',
-  tweetText: 'The region’s technology companies lead the way, according to list compiled with Statista',
+  tweetText: 'The FT 1000: Tech leads the way for high-growth companies in the Asia-Pacific region',
   twitterHeadline: 'FT 1000: High-Growth Companies Asia-Pacific',
 
   // FACEBOOK
