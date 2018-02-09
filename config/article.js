@@ -39,7 +39,7 @@ export default () => ({ // eslint-disable-line
   byline: [
     { name: 'David Blood', url: 'https://www.ft.com/david-blood' },
     { name: 'Ændrew Rininsland', url: 'https://www.ft.com/%C3%A6ndrew-rininsland' },
-    { name: 'Ian Smith', url: '' },
+    { name: 'Ian Smith', url: 'https://www.ft.com/stream/d67e3d4c-2e3b-3e61-80c9-d85a559b600d' },
   ],
 
   // Appears in the HTML <title>
@@ -62,29 +62,29 @@ export default () => ({ // eslint-disable-line
         optional social meta data?
   */
   // General social
-socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
+  socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
   // socialHeadline: '',
   // socialSummary:  '',
 
   // TWITTER
   twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
   twitterCreator: '@ftreports',
-  tweetText:  'FT 1000: High-Growth Companies Asia-Pacific',
-  twitterHeadline:  'FT 1000: High-Growth Companies Asia-Pacific',
+  tweetText: 'FT 1000: High-Growth Companies Asia-Pacific',
+  twitterHeadline: 'FT 1000: High-Growth Companies Asia-Pacific',
 
   // FACEBOOK
-facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
-facebookHeadline: 'FT 1000: High-Growth Companies Asia-Pacific',
+  facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
+  facebookHeadline: 'FT 1000: High-Growth Companies Asia-Pacific',
 
-//ADVERTISING
- ads: {
+  // ADVERTISING
+  ads: {
     // Ad unit hierarchy makes ads more granular.
     gptSite: 'ft.com',
     // Start with ft.com and /companies /markets /world as appropriate to your story
     gptZone: 'companies/european',
     // granular targeting is optional and will be specified by the ads team
     dfpTargeting: "sr=FT 1000: Europe's Fastest Growing Companies",
-},
+  },
 
   tracking: {
 
