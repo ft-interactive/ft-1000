@@ -4,8 +4,8 @@ export default () => ({ // eslint-disable-line
   id: '02cdcb40-01d9-11e8-9650-9c0ad2d7c5b5',
 
   // canonical URL of the published page
-  // https://ig.ft.com/sites/ft-1000 get filled in by the ./configure script
-  url: 'https://ig.ft.com/special-reports/ft-1000/asia-pacific/2018',
+  // https://ig.ft.com/special-reports/ft-1000/asia-pacific/2018/ get filled in by the ./configure script
+  url: 'https://ig.ft.com/special-reports/ft-1000/asia-pacific/2018/',
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
