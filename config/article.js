@@ -1,24 +1,24 @@
 export default () => ({ // eslint-disable-line
 
   // link file UUID
-  id: '02cdcb40-01d9-11e8-9650-9c0ad2d7c5b5',
+  id: 'cf0c5fce-3112-11e8-b5bf-23cb17fd1498',
 
   // canonical URL of the published page
   // https://ig.ft.com/special-reports/ft-1000/asia-pacific/2018/ get filled in by the ./configure script
-  url: 'https://ig.ft.com/special-reports/ft-1000/asia-pacific/2018/',
+  url: 'https://ig.ft.com/special-reports/ft-1000/europe/2018/',
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date('2018-02-11T23:00:00Z'),
 
-  headline: 'FT 1000: High-Growth Companies Asia-Pacific',
+  headline: 'FT 1000: High-Growth Companies Europe',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'The region’s technology companies lead the way, according to list compiled with',
+  summary: 'Standfirst TK',
 
   topic: {
-    name: 'FT 1000: High-Growth Companies Asia-Pacific',
-    url: 'https://www.ft.com/reports/ft1000-asia-pacific',
+    name: 'FT 1000: High-Growth Companies Europe',
+    url: '#',
   },
 
   relatedArticle: {
@@ -27,8 +27,8 @@ export default () => ({ // eslint-disable-line
   },
 
   mainImage: {
-    title: 'FT 1000: High-Growth Companies Asia-Pacific',
-    description: 'FT 1000: High-Growth Companies Asia-Pacific',
+    title: 'FT 1000: High-Growth Companies Europe',
+    description: 'FT 1000: High-Growth Companies Europe',
     url: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=2084&height=1152&quality=high',
     width: 2048, // ensure correct width
     height: 1152, // ensure correct height
@@ -43,10 +43,10 @@ export default () => ({ // eslint-disable-line
   ],
 
   // Appears in the HTML <title>
-  title: 'FT 1000: High-Growth Companies Asia-Pacific',
+  title: 'FT 1000: High-Growth Companies Europe',
 
   // meta data
-  description: 'The FT 1000: High-growth companies in the Asia-Pacific region',
+  description: 'The FT 1000: High-growth companies in the Europe region',
 
   /*
   TODO: Select Twitter card type -
@@ -64,17 +64,17 @@ export default () => ({ // eslint-disable-line
   // General social
   socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
   // socialHeadline: '',
-  socialSummary: 'The FT 1000: High-growth companies in the Asia-Pacific region',
+  socialSummary: 'The FT 1000: High-growth companies in the Europe region',
 
   // TWITTER
   twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
   twitterCreator: '@ftreports',
-  tweetText: 'The FT 1000: Tech leads the way for high-growth companies in the Asia-Pacific region',
-  twitterHeadline: 'FT 1000: High-Growth Companies Asia-Pacific',
+  tweetText: '',
+  twitterHeadline: 'FT 1000: High-Growth Companies Europe',
 
   // FACEBOOK
   facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
-  facebookHeadline: 'FT 1000: High-Growth Companies Asia-Pacific',
+  facebookHeadline: 'FT 1000: High-Growth Companies Europe',
 
   // ADVERTISING
   ads: {
