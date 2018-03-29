@@ -11,10 +11,10 @@ export default () => ({ // eslint-disable-line
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date('2018-02-11T23:00:00Z'),
 
-  headline: 'FT 1000: High-Growth Companies Europe',
+  headline: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'Standfirst TK',
+  summary: 'Now in its second year, the FT 1000 – compiled with Statista – shows tech remains king, and is creating thousands of jobs',
 
   topic: {
     name: 'FT 1000: High-Growth Companies Europe',
@@ -27,8 +27,8 @@ export default () => ({ // eslint-disable-line
   },
 
   mainImage: {
-    title: 'FT 1000: High-Growth Companies Europe',
-    description: 'FT 1000: High-Growth Companies Europe',
+    title: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
+    description: 'Now in its second year, the FT 1000 – compiled with Statista – shows tech remains king, and is creating thousands of jobs',
     url: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=2084&height=1152&quality=high',
     width: 2048, // ensure correct width
     height: 1152, // ensure correct height
@@ -43,10 +43,10 @@ export default () => ({ // eslint-disable-line
   ],
 
   // Appears in the HTML <title>
-  title: 'FT 1000: High-Growth Companies Europe',
+  title: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
 
   // meta data
-  description: 'The FT 1000: High-growth companies in the Europe region',
+  description: 'Now in its second year, the FT 1000 – compiled with Statista – shows tech remains king, and is creating thousands of jobs',
 
   /*
   TODO: Select Twitter card type -
@@ -63,18 +63,18 @@ export default () => ({ // eslint-disable-line
   */
   // General social
   socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
-  // socialHeadline: '',
-  socialSummary: 'The FT 1000: High-growth companies in the Europe region',
+  socialHeadline: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
+  socialSummary: 'Now in its second year, the FT 1000 – compiled with Statista – shows tech remains king, and is creating thousands of jobs',
 
   // TWITTER
   twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
   twitterCreator: '@ftreports',
-  tweetText: '',
-  twitterHeadline: 'FT 1000: High-Growth Companies Europe',
+  tweetText: 'Now in its second year, the FT 1000 – compiled with Statista – shows tech remains king, and is creating thousands of jobs',
+  twitterHeadline: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
 
   // FACEBOOK
   facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
-  facebookHeadline: 'FT 1000: High-Growth Companies Europe',
+  facebookHeadline: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
 
   // ADVERTISING
   ads: {
