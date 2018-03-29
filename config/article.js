@@ -17,8 +17,8 @@ export default () => ({ // eslint-disable-line
   summary: 'Tech remains king, according to list compiled with',
 
   topic: {
-    name: 'FT 1000: High-Growth Companies Europe',
-    url: '#',
+    name: 'FT 1000: Europe\'s Fastest Growing Companies',
+    url: 'https://www.ft.com/reports/europes-fastest-growing-companies',
   },
 
   relatedArticle: {
