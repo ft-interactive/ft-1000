@@ -26,8 +26,8 @@ import Tablesort from 'tablesort';
 (function sortNumberNA() {
   const cleanNumber = i => i.replace(/[^\-+?0-9.]/g, '');
   const compareNumber = (a, b) => {
-    if (a === 'n/a' || a === '-') return -1;
-    else if (b === 'n/a' || b === '-') return 1;
+    if (a === 'n/a' || a === '-') a = Number(0); // eslint-disable-line
+    else if (b === 'n/a' || b === '-') b = Number(0); // eslint-disable-line
 
     const floatA = parseFloat(a);
     const floatB = parseFloat(b);
