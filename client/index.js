@@ -24,9 +24,11 @@ import Tablesort from 'tablesort';
 }());
 
 (function sortNumberNA() {
-  const cleanNumber = i => i.replace(/[^\-?0-9.]/g, '');
+  const cleanNumber = i => i.replace(/[^\-+?0-9.]/g, '');
   const compareNumber = (a, b) => {
-    if (a === 'n/a') return false;
+    if (a === 'n/a' || a === '-') a = Number(0); // eslint-disable-line
+    else if (b === 'n/a' || b === '-') b = Number(0); // eslint-disable-line
+
     const floatA = parseFloat(a);
     const floatB = parseFloat(b);
 
@@ -34,7 +36,7 @@ import Tablesort from 'tablesort';
   };
 
   const suffixedCurrency = /^-?\d+\s*([,.]\d{0,2})?[£\x24Û¢´€]/; // Suffixed currency
-  const numberRegex = /^-?(\d)*-?([,.]){0,1}-?(\d)+([E,e][-+][\d]+)?%?$/; // General number
+  const numberRegex = /^[-+]?(\d)*-?([,.]){0,1}-?(\d)+([E,e][-+][\d]+)?%?$/; // General number
   const prefixed = /^-?[£\x24Û¢´€]?\d+\s*([,.]\d{0,2})/; // Prefixed currency
 
   Tablesort.extend(
