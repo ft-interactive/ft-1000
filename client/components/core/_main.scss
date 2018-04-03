@@ -235,7 +235,10 @@ th:nth-child(6) {
 }
 
 @include oGridRespondTo(S) {
-
+  td:nth-child(4),
+  th:nth-child(4) {
+    display: table-cell;
+  }
 }
 
  @include oGridRespondTo(M) {
