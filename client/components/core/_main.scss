@@ -214,49 +214,28 @@ table {
   }
 }
 
-td:nth-child(n+9),
-th:nth-child(n+9) {
-  display: none;
+td:nth-child(n),
+th:nth-child(n) {
+  display: table-cell;
 }
-td:nth-child(1),
-th:nth-child(1) {
-  display: none;
-}
+
 td:nth-child(2),
 th:nth-child(2) {
   display: none;
 }
-td:nth-child(4),
-th:nth-child(4) {
-  display: none;
-}
-td:nth-child(5),
-th:nth-child(5) {
-  display: none;
-}
-td:nth-child(7),
-th:nth-child(7) {
+
+td:nth-child(n+4),
+th:nth-child(n+4) {
   display: none;
 }
 
+td:nth-child(6),
+th:nth-child(6) {
+  display: table-cell;
+}
 
 @include oGridRespondTo(S) {
-  .intro {
-    font-size: 1.2em;
-    line-height: 1.4em;
-  }
-  td:nth-child(n),
-  th:nth-child(n) {
-    display: table-cell;
-  }
-  td:nth-child(2),
-  th:nth-child(2) {
-    display: none;
-  }
-  td:nth-child(n+5),
-  th:nth-child(n+5) {
-    display: none;
-  }
+
 }
 
  @include oGridRespondTo(M) {
@@ -275,8 +254,8 @@ th:nth-child(7) {
   th:nth-child(n) {
     display: table-cell;
   }
-  td:nth-child(n+8),
-  th:nth-child(n+8) {
+  td:nth-child(n+7),
+  th:nth-child(n+7) {
     display: none;
   }
 }
