@@ -46,7 +46,7 @@ export default () => ({ // eslint-disable-line
   title: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
 
   // meta data
-  description: 'Now in its second year, the FT 1000 – compiled with Statista – shows tech remains king, and is creating thousands of jobs',
+  description: 'Tech remains king in second annual ranking',
 
   /*
   TODO: Select Twitter card type -
