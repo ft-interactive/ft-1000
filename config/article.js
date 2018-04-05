@@ -28,7 +28,7 @@ export default () => ({ // eslint-disable-line
 
   mainImage: {
     title: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
-    description: 'Now in its second year, the FT 1000 – compiled with Statista – shows tech remains king, and is creating thousands of jobs',
+    description: 'Tech remains king in second annual ranking',
     url: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
     width: 2048, // ensure correct width
     height: 1152, // ensure correct height
@@ -64,12 +64,12 @@ export default () => ({ // eslint-disable-line
   // General social
   socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
   socialHeadline: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
-  socialSummary: 'Now in its second year, the FT 1000 – compiled with Statista – shows tech remains king, and is creating thousands of jobs',
+  socialSummary: 'Tech remains king in second annual ranking',
 
   // TWITTER
   twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
   twitterCreator: '@ftreports',
-  tweetText: 'Now in its second year, the FT 1000 – compiled with Statista – shows tech remains king, and is creating thousands of jobs',
+  tweetText: 'Tech remains king in second annual ranking',
   twitterHeadline: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
 
   // FACEBOOK
