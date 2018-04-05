@@ -29,7 +29,7 @@ export default () => ({ // eslint-disable-line
   mainImage: {
     title: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
     description: 'Now in its second year, the FT 1000 – compiled with Statista – shows tech remains king, and is creating thousands of jobs',
-    url: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=2084&height=1152&quality=high',
+    url: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
     width: 2048, // ensure correct width
     height: 1152, // ensure correct height
   },
@@ -62,18 +62,18 @@ export default () => ({ // eslint-disable-line
         optional social meta data?
   */
   // General social
-  socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
+  socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
   socialHeadline: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
   socialSummary: 'Now in its second year, the FT 1000 – compiled with Statista – shows tech remains king, and is creating thousands of jobs',
 
   // TWITTER
-  twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
+  twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
   twitterCreator: '@ftreports',
   tweetText: 'Now in its second year, the FT 1000 – compiled with Statista – shows tech remains king, and is creating thousands of jobs',
   twitterHeadline: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
 
   // FACEBOOK
-  facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3Ac4eaada6-0c1a-11e8-bacb-2958fde95e5e?source=ig&width=700&quality=high',
+  facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
   facebookHeadline: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
 
   // ADVERTISING

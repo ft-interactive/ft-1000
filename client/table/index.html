@@ -32,7 +32,7 @@
         -
         {% endif %}
       </td> -->
-      <td style="text-align: left;">{% if row.url %}<a href="http://{{ row.url }}" rel="nofollow" target="_blank">{{ row.company }}</a>{% else %}{{ row.company }}{% endif %}</td>
+      <td style="text-align: left;">{% if row.url != 'n/a' %}<a href="http://{{ row.url }}" rel="nofollow" target="_blank">{{ row.company }}</a>{% else %}{{ row.company }}{% endif %}</td>
       <td style="text-align: left;"><a href="https://www.ft.com/topics/places/{{ row.countryurl }}">{{ row.country }}</a></td>
       <td style="text-align: left"><a href="{{ row.ftindustrylink }}">{{ row.ftindustry }}</td>
       <td style="text-align: right;">{% if row.growthabsolute %}{{ (row.growthabsolute) | round | commaify }}%{% endif %}</td>
