@@ -1,4 +1,4 @@
-# [ft-1000](https://ig.ft.com/sites/ft-1000)
+# [ft-1000](https://ig.ft.com/ft-1000)
 
 > The FT 1000 list
 

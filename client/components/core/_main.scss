@@ -147,10 +147,8 @@ table {
         -ms-user-select: none;
         cursor: pointer;
         transition: background-color 0.3s;
-        &:nth-child(2) {
-          text-align: right;
-        }
-        &:nth-child(n+6) {
+
+        &:nth-child(n+5) {
           text-align: right;
         }
         &:hover {
@@ -221,22 +219,22 @@ th:nth-child(n) {
 
 td:nth-child(2),
 th:nth-child(2) {
+  display: table-cell;
+}
+
+td:nth-child(n+3),
+th:nth-child(n+3) {
   display: none;
 }
 
-td:nth-child(n+4),
-th:nth-child(n+4) {
-  display: none;
-}
-
-td:nth-child(6),
-th:nth-child(6) {
+td:nth-child(5),
+th:nth-child(5) {
   display: table-cell;
 }
 
 @include oGridRespondTo(S) {
-  td:nth-child(4),
-  th:nth-child(4) {
+  td:nth-child(3),
+  th:nth-child(3) {
     display: table-cell;
   }
 }
@@ -276,8 +274,8 @@ th:nth-child(6) {
   th:nth-child(n) {
     display: table-cell;
   }
-  td:nth-child(n+10),
-  th:nth-child(n+10) {
+  td:nth-child(n+9),
+  th:nth-child(n+9) {
     display: none;
   }
 }
