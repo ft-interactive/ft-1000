@@ -1,0 +1,63 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/project
+    docker:
+      - image: aendrew/starter-kit-docker:latest # https://github.com/aendrew/starter-kit-docker
+    steps:
+      - checkout
+      - restore_cache: # special step to restore the dependency cache
+          namr: Restore cache (npm cache)
+          key: npm-cache-{{ checksum "package-lock.json" }}
+      - restore_cache: # special step to restore the dependency cache
+          name: Restore cache (bower_components)
+          key: bower_components-{{ checksum "bower.json" }}
+      - run: # N.B., this does bower install on postinstall.
+          name: Install dependencies
+          command: npm ci --unsafe-perm
+      - run:
+          name: Rebuild problematic node modules
+          command: npm rebuild
+      - save_cache:
+          name: Save cache (node_modules)
+          key: npm-cache-{{ checksum "package-lock.json" }}
+          paths:
+            - $HOME/.npm
+      - save_cache:
+          name: Save cache (bower_components)
+          key: bower_components-{{ checksum "bower.json" }}
+          paths:
+            - ./bower_components/
+      - run:
+          name: Build
+          command: npm run build
+      - store_artifacts:
+          name: Store artifacts (dist)
+          path: dist/
+      - deploy:
+          name: Deploy
+          command: |
+            if [ "$PREVIEW" == "true" ]
+            then
+              npm run deploy -- --confirm --preview
+            else
+              npm run deploy -- --confirm
+            fi
+      - run:
+          name: Check accessibility of deployed site
+          command: |
+            if [ "$PREVIEW" == "true" ]
+            then
+              npm run a11y:preview
+            else
+              npm run a11y
+            fi
+      - run:
+          name: General QA checks
+          command: |
+            if [ $CIRCLE_BRANCH = "master" ]
+            then
+              npm run qa
+            else
+              npm run qa || echo "Automatic QA checks failed. Continuing anyway"
+            fi
