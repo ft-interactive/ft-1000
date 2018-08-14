@@ -44,20 +44,11 @@ jobs:
               npm run deploy -- --confirm
             fi
       - run:
-          name: Check accessibility of deployed site
-          command: |
-            if [ "$PREVIEW" == "true" ]
-            then
-              npm run a11y:preview
-            else
-              npm run a11y
-            fi
-      - run:
           name: General QA checks
           command: |
             if [ $CIRCLE_BRANCH = "master" ]
             then
-              npm run qa
+              npm run preflight
             else
-              npm run qa || echo "Automatic QA checks failed. Continuing anyway"
+              npm run preflight || echo "Automatic QA checks failed. Continuing anyway"
             fi
