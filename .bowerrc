@@ -4,5 +4,6 @@
       "https://origami-bower-registry.ft.com",
       "https://registry.bower.io"
     ]
-  }
+  },
+  "allow_root": true
 }
