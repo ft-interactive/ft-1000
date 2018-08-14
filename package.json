@@ -93,6 +93,6 @@
     "axios": "^0.15.3",
     "jquery": "^3.1.1",
     "tablesort": "^5.0.0",
-    "d3-time-format": "^0.2.1"
+    "d3-time-format": "^2.0.3"
   }
 }
