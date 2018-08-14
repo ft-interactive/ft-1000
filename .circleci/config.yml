@@ -60,12 +60,3 @@ jobs:
             else
               npm run deploy -- --confirm
             fi
-      - run:
-          name: General QA checks
-          command: |
-            if [ $CIRCLE_BRANCH = "master" ]
-            then
-              npm run preflight
-            else
-              npm run preflight || echo "Automatic QA checks failed. Continuing anyway"
-            fi
