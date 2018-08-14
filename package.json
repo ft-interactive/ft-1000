@@ -18,7 +18,6 @@
   ],
   "devDependencies": {
     "ansi-to-html": "^0.5.0",
-    "axios": "^0.15.3",
     "babel-core": "^6.22.1",
     "babel-plugin-transform-runtime": "^6.22.0",
     "babel-preset-env": "^1.1.8",
@@ -29,7 +28,6 @@
     "browser-sync": "^2.18.7",
     "browserify": "^14.0.0",
     "d3-format": "^1.1.0",
-    "d3-time-format": "^2.0.3",
     "debowerify": "^1.5.0",
     "finalhandler": "^0.5.1",
     "ft-graphics-deploy": "^2.2.2",
@@ -66,7 +64,6 @@
     "babel-eslint": "^7.1.1",
     "eslint": "^3.15.0",
     "eslint-config-airbnb": "^14.1.0",
-    "eslint-config-ft-graphics": "ft-interactive/eslint-config-ft-graphics",
     "eslint-plugin-babel": "^4.0.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
@@ -93,6 +90,6 @@
     "axios": "^0.15.3",
     "jquery": "^3.1.1",
     "tablesort": "^5.0.0",
-    "d3-time-format": "^0.2.1"
+    "d3-time-format": "^2.0.3"
   }
 }
