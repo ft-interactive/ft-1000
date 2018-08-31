@@ -9,38 +9,26 @@
       <th class="sortable" data-sort-default></th>
       <!-- <th data-sort-method="number-na" class="sortable">Change in rank<br /><span class="o-table__cell--content-secondary">2015-16</span></th> -->
       <th class="sortable">Company</th>
-      <th class="sortable align-left">Country</th>
-      <th class="sortable align-left">Sector</th>
+      <th class="sortable">Sector</th>
+      <th class="sortable">Impact</th>
       <th class="sortable">Revenue<br />Growth <span class="o-table__cell--content-secondary">2013-16</span></th>
-      <th class="sortable">CAGR<br/><span class="o-table__cell--content-secondary">2013-16</span></th>
-      <th class="sortable">Revenue<br/><span class="o-table__cell--content-secondary">2016 (&rsquo;000 &euro;)</span></th>
-      <th class="sortable">Employee Growth<br/><span class="o-table__cell--content-secondary">2013-16</span></th>
-      <th data-sort-method="number-na" class="sortable">Employees<br/><span class="o-table__cell--content-secondary">2016</span></th>
-      <th class="sortable">Founded</th>
+      <th class="sortable">Revenue<br/><span class="o-table__cell--content-secondary">2016 (&rsquo;000 &pound;)</span></th>
+      <th data-sort-method="number-na" class="sortable">Employees<br/><span class="o-table__cell--content-secondary">2017</span></th>
+      <th class="sortable">Employee<br />Growth <span class="o-table__cell--content-secondary">2013-16</span></th>
+      <th class="sortable">Proportion of<br />Women</th>
     </tr>
   </thead>
   <tbody>
 {% for row in table %}
     <tr>
-      <td style="text-align: right;">{{ row.rank | commaify }}</td>
-      <!-- <td style="text-align: right;">
-        {% if (row.change) and (row.change >= 0) %}
-        <span class="change positive">+{{ row.change }}</span>
-        {% elif (row.change) %}
-        <span class="change">{{ row.change }}</span>
-        {% else %}
-        -
-        {% endif %}
-      </td> -->
       <td style="text-align: left;">{% if row.url != 'n/a' %}<a href="http://{{ row.url }}" rel="nofollow" target="_blank">{{ row.company }}</a>{% else %}{{ row.company }}{% endif %}</td>
-      <td style="text-align: left;"><a href="https://www.ft.com/topics/places/{{ row.countryurl }}">{{ row.country }}</a></td>
-      <td style="text-align: left"><a href="{{ row.ftindustrylink }}">{{ row.ftindustry }}</td>
-      <td style="text-align: right;">{% if row.growthabsolute %}{{ (row.growthabsolute) | round | commaify }}%{% endif %}</td>
-      <td style="text-align: right;">{% if row.growthcompoundannual %}{{ (row.growthcompoundannual) | commaify }}%{% endif %}</td>
+      <td style="text-align: left;">{{ row.sector }}</td>
+      <td style="text-align: left;">{{ row.impact }}</td>
+      <td style="text-align: right;">{% if row.revenuegrowth %}{{ row.revenuegrowth | round | commaify }}%{% endif %}</td>
       <td style="text-align: right;">{% if row.revenue2016 %}{{ row.revenue2016 | round | commaify }}{% endif %}</td>
-      <td style="text-align: right;">{% if row.employeegrowth != 'n/a' %}{{ row.employeegrowth | round | commaify | dashify }}{% else %}n/a{% endif %}</td>
-      <td style="text-align: right;">{% if row.employees2016 %}{{ row.employees2016 | round | commaify | dashify }}{% endif %}</td>
-      <td style="text-align: right;">{% if row.foundedyear %}{{ row.foundedyear }}{% endif %}</td>
+      <td style="text-align: right;">{% if row.employees2017 %}{{ row.employees2017 | round | commaify | dashify }}{% endif %}</td>
+      <td style="text-align: right;">{% if row.employeesgrowth != 'n/a' %}{{ row.employeesgrowth | round | commaify | dashify }}{% else %}n/a{% endif %}</td>
+      <td style="text-align: right;">{% if row.women %}{{ row.women | round | commaify }}%{% endif %}</td>
     </tr>
 {% endfor %}
   </tbody>
