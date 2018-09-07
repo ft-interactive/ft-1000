@@ -13,6 +13,7 @@
       <th data-sort-method="number-na" class="sortable">Employees<br/><span class="o-table__cell--content-secondary">2017</span></th>
       <th class="sortable">Employee<br />Growth <span class="o-table__cell--content-secondary">2013-16</span></th>
       <th class="sortable">Proportion of<br />Women</th>
+      <th class="sortable">Founded</th>
     </tr>
   </thead>
   <tbody>
@@ -21,11 +22,12 @@
       <td style="text-align: left;">{% if row.url != 'n/a' %}<a href="http://{{ row.url }}" rel="nofollow" target="_blank">{{ row.company }}</a>{% else %}{{ row.company }}{% endif %}</td>
       <td style="text-align: left;">{{ row.sector }}</td>
       <td style="text-align: left;">{{ row.impact }}</td>
-      <td style="text-align: right;">{% if row.revenuegrowth %}{{ row.revenuegrowth | round | commaify }}%{% endif %}</td>
-      <td style="text-align: right;">{% if row.revenue2016 %}{{ row.revenue2016 | round | commaify }}{% endif %}</td>
-      <td style="text-align: right;">{% if row.employees2017 %}{{ row.employees2017 | round | commaify | dashify }}{% endif %}</td>
-      <td style="text-align: right;">{% if row.employeesgrowth != 'n/a' %}{{ row.employeesgrowth | round | commaify | dashify }}{% else %}n/a{% endif %}</td>
-      <td style="text-align: right;">{% if row.women %}{{ row.women | round | commaify }}%{% endif %}</td>
+      <td style="text-align: right;">{% if row.revenuegrowth %}{{ row.revenuegrowth }}%{% endif %}</td>
+      <td style="text-align: right;">{% if row.revenue2016 %}{{ row.revenue2016 | commaify }}{% endif %}</td>
+      <td style="text-align: right;">{% if row.employees2017 %}{{ row.employees2017 | commaify }}{% endif %}</td>
+      <td style="text-align: right;">{% if row.employeesgrowth != 'n/a' %}{{ row.employeesgrowth | commaify }}{% else %}n/a{% endif %}</td>
+      <td style="text-align: right;">{% if row.women != 'n/a' %}{{ row.women }}%{% else %}n/a{% endif %}</td>
+      <td style="text-align: right;">{% if row.founded %}{{ row.founded }}{% endif %}</td>
     </tr>
 {% endfor %}
   </tbody>
