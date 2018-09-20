@@ -29,7 +29,7 @@ export default () => ({ // eslint-disable-line
   mainImage: {
     title: 'The FT Future 100 UK: the list',
     description: 'British companies that are making an impact, either on society or their industry',
-    url: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
+    url: 'https://www.ft.com/__origami/service/image/v2/images/raw/http%253A%252F%252Fft-ig-images-prod.s3-website-eu-west-1.amazonaws.com%252Fv1%252F8462545163-efucn.jpg?source=ig&width=2084&height=1152&quality=high',
     width: 2048, // ensure correct width
     height: 1152, // ensure correct height
   },
@@ -61,18 +61,18 @@ export default () => ({ // eslint-disable-line
         optional social meta data?
   */
   // General social
-  socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
+  socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/http%253A%252F%252Fft-ig-images-prod.s3-website-eu-west-1.amazonaws.com%252Fv1%252F8462545163-efucn.jpg?source=ig&width=2084&height=1152&quality=high',
   socialHeadline: 'The FT Future 100 UK: the list',
   socialSummary: 'British companies that are making an impact, either on society or their industry',
 
   // TWITTER
-  twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
+  twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/http%253A%252F%252Fft-ig-images-prod.s3-website-eu-west-1.amazonaws.com%252Fv1%252F8462545163-efucn.jpg?source=ig&width=2084&height=1152&quality=high',
   twitterCreator: '@ftreports',
   twitterHeadline: 'The FT Future 100 UK: the list',
   tweetText: 'British companies that are making an impact, either on society or their industry',
 
   // FACEBOOK
-  facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
+  facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/http%253A%252F%252Fft-ig-images-prod.s3-website-eu-west-1.amazonaws.com%252Fv1%252F8462545163-efucn.jpg?source=ig&width=2084&height=1152&quality=high',
   facebookHeadline: 'The FT Future 100 UK: the list',
 
   // ADVERTISING
