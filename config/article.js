@@ -1,11 +1,11 @@
 export default () => ({ // eslint-disable-line
 
   // link file UUID
-  id: 'cf0c5fce-3112-11e8-b5bf-23cb17fd1498',
+  id: '31d65b3e-bcd5-11e8-94b2-17176fbf93f5',
 
   // canonical URL of the published page
   // https://ig.ft.com/special-reports/ft-1000/asia-pacific/2018/ get filled in by the ./configure script
-  url: 'https://ig.ft.com/ft-1000/2018/',
+  url: 'https://ig.ft.com/future-100/2018/',
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
@@ -21,10 +21,10 @@ export default () => ({ // eslint-disable-line
     url: 'https://www.ft.com/reports/europes-fastest-growing-companies',
   },
 
-  relatedArticle: {
-    text: 'Statista',
-    url: 'https://www.statista.com/aboutus/',
-  },
+  // relatedArticle: {
+  //   text: 'Statista',
+  //   url: 'https://www.statista.com/aboutus/',
+  // },
 
   mainImage: {
     title: 'The FT Future 100 UK: the list',
