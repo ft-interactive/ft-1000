@@ -9,12 +9,12 @@ export default () => ({ // eslint-disable-line
 
   // To set an exact publish date do this:
   //       new Date('2016-05-17T17:11:22Z')
-  publishedDate: new Date('2018-04-06T04:00:00Z'),
+  publishedDate: new Date('2018-09-21T04:00:00Z'),
 
-  headline: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
+  headline: 'The FT Future 100 UK: the list',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'Tech remains king, according to list compiled with',
+  summary: 'British companies are making an impact, either on society or their industry',
 
   topic: {
     name: 'FT 1000: Europe\'s Fastest Growing Companies',
@@ -27,8 +27,8 @@ export default () => ({ // eslint-disable-line
   },
 
   mainImage: {
-    title: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
-    description: 'Tech remains king in second annual ranking',
+    title: 'The FT Future 100 UK: the list',
+    description: 'British companies are making an impact, either on society or their industry',
     url: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
     width: 2048, // ensure correct width
     height: 1152, // ensure correct height
@@ -39,14 +39,13 @@ export default () => ({ // eslint-disable-line
   byline: [
     { name: 'Ian Smith', url: 'https://www.ft.com/stream/d67e3d4c-2e3b-3e61-80c9-d85a559b600d' },
     { name: 'David Blood', url: 'https://www.ft.com/david-blood' },
-    { name: 'Ændrew Rininsland', url: 'https://www.ft.com/%C3%A6ndrew-rininsland' },
   ],
 
   // Appears in the HTML <title>
-  title: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
+  title: 'The FT Future 100 UK: the list',
 
   // meta data
-  description: 'Tech remains king in second annual ranking',
+  description: 'British companies are making an impact, either on society or their industry',
 
   /*
   TODO: Select Twitter card type -
@@ -63,18 +62,18 @@ export default () => ({ // eslint-disable-line
   */
   // General social
   socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
-  socialHeadline: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
-  socialSummary: 'Tech remains king in second annual ranking',
+  socialHeadline: 'The FT Future 100 UK: the list',
+  socialSummary: 'British companies are making an impact, either on society or their industry',
 
   // TWITTER
   twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
   twitterCreator: '@ftreports',
-  tweetText: 'Tech remains king in second annual ranking',
-  twitterHeadline: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
+  twitterHeadline: 'The FT Future 100 UK: the list',
+  tweetText: 'British companies are making an impact, either on society or their industry',
 
   // FACEBOOK
   facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/ftcms%3A8ed33e5a-38c4-11e8-b161-65936015ebc3?source=ig&width=2084&height=1152&quality=high',
-  facebookHeadline: 'The FT 1000: the complete list of Europe’s fastest-growing companies',
+  facebookHeadline: 'The FT Future 100 UK: the list',
 
   // ADVERTISING
   ads: {
