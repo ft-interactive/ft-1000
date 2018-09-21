@@ -11,10 +11,10 @@ export default () => ({ // eslint-disable-line
   //       new Date('2016-05-17T17:11:22Z')
   publishedDate: new Date('2018-09-21T04:00:00Z'),
 
-  headline: 'The FT Future 100 UK: the list',
+  headline: 'FT Future 100 UK: the full list',
 
   // summary === standfirst (Summary is what the content API calls it)
-  summary: 'British companies that are making an impact, either on society or their industry',
+  summary: 'These British companies are making an impact, either on society or their industry',
 
   topic: {
     name: 'FT Future 100 UK',
@@ -27,8 +27,8 @@ export default () => ({ // eslint-disable-line
   // },
 
   mainImage: {
-    title: 'The FT Future 100 UK: the list',
-    description: 'British companies that are making an impact, either on society or their industry',
+    title: 'FT Future 100 UK: the full list',
+    description: 'These British companies are making an impact, either on society or their industry',
     url: 'https://www.ft.com/__origami/service/image/v2/images/raw/http%253A%252F%252Fft-ig-images-prod.s3-website-eu-west-1.amazonaws.com%252Fv1%252F8462545163-efucn.jpg?source=ig&width=2084&height=1152&quality=high',
     width: 2048, // ensure correct width
     height: 1152, // ensure correct height
@@ -42,10 +42,10 @@ export default () => ({ // eslint-disable-line
   ],
 
   // Appears in the HTML <title>
-  title: 'The FT Future 100 UK: the list',
+  title: 'FT Future 100 UK: the full list',
 
   // meta data
-  description: 'British companies that are making an impact, either on society or their industry',
+  description: 'These British companies are making an impact, either on society or their industry',
 
   /*
   TODO: Select Twitter card type -
@@ -62,18 +62,18 @@ export default () => ({ // eslint-disable-line
   */
   // General social
   socialImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/http%253A%252F%252Fft-ig-images-prod.s3-website-eu-west-1.amazonaws.com%252Fv1%252F8462545163-efucn.jpg?source=ig&width=2084&height=1152&quality=high',
-  socialHeadline: 'The FT Future 100 UK: the list',
-  socialSummary: 'British companies that are making an impact, either on society or their industry',
+  socialHeadline: 'FT Future 100 UK: the full list',
+  socialSummary: 'These British companies are making an impact, either on society or their industry',
 
   // TWITTER
   twitterImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/http%253A%252F%252Fft-ig-images-prod.s3-website-eu-west-1.amazonaws.com%252Fv1%252F8462545163-efucn.jpg?source=ig&width=2084&height=1152&quality=high',
   twitterCreator: '@ftreports',
-  twitterHeadline: 'The FT Future 100 UK: the list',
-  tweetText: 'British companies that are making an impact, either on society or their industry',
+  twitterHeadline: 'FT Future 100 UK: the full list',
+  tweetText: 'These British companies are making an impact, either on society or their industry',
 
   // FACEBOOK
   facebookImage: 'https://www.ft.com/__origami/service/image/v2/images/raw/http%253A%252F%252Fft-ig-images-prod.s3-website-eu-west-1.amazonaws.com%252Fv1%252F8462545163-efucn.jpg?source=ig&width=2084&height=1152&quality=high',
-  facebookHeadline: 'The FT Future 100 UK: the list',
+  facebookHeadline: 'FT Future 100 UK: the full list',
 
   // ADVERTISING
   ads: {
