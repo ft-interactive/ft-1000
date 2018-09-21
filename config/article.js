@@ -17,8 +17,8 @@ export default () => ({ // eslint-disable-line
   summary: 'British companies that are making an impact, either on society or their industry',
 
   topic: {
-    name: 'FT 1000: Europe\'s Fastest Growing Companies',
-    url: 'https://www.ft.com/reports/europes-fastest-growing-companies',
+    name: 'FT Future 100 UK',
+    url: 'https://www.ft.com/reports/ft-future-100-uk',
   },
 
   // relatedArticle: {
