@@ -46,6 +46,22 @@ import Tablesort from 'tablesort';
   );
 }());
 
+(function sortCategory() {
+  const compareCategory = (a, b) => {
+    if (a === '') return 1;
+    if (b === '') return -1;
+    if (a === b) return 0;
+
+    return a.localeCompare(b);
+  };
+
+  Tablesort.extend(
+    'category',
+    item => item,
+    (a, b) => compareCategory(a, b),
+  );
+}());
+
 $('.search').keyup(function searchKeyup() {
   const el = this;
   // Show only matching TR, hide rest of them
